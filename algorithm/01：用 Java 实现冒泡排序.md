@@ -21,19 +21,18 @@
 
 ```java
 public class Test09 {
-
     private static void swap(int[] arr, int i, int j) {
         int temp = arr[i];
         arr[i] = arr[j];
         arr[j] = temp;
     }
-
+    
     private static void printArr(int[] arr) {
         for (int anArr : arr) {
             System.out.print(anArr + " ");
         }
     }
-
+    
     private static void bubbleSort(int[] arr) {
         if (arr == null)
             return;
@@ -44,7 +43,7 @@ public class Test09 {
             }
         }
     }
-
+    
     public static void main(String[] args) {
         int[] arr = {6, 4, 2, 1, 8, 3, 7, 9, 5};
         bubbleSort(arr);
